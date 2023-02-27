@@ -8,7 +8,7 @@ export const palettes = [
     },
     colors: ['#42331f', '#b79e8e', '#e9d0c9', '#5ca9aa', '#025b61'],
     direction: 'horizontal',
-    description: 'You are sitting on the beach. Your feet and hands are touching sand, playing with is. With every inhale you breathe in that fresh solty air. You can also feel it on your tongue. This moment is so peacefull you could cry. And suddenly everything is so simple.',
+    description: 'You are sitting on the beach. Your feet and hands are touching sand, playing with it. With every inhale you breathe in that fresh solty air. You can also feel it on your tongue. This moment is so peacefull you could cry. And suddenly everything is so simple.',
   },
   {
     name: 'Mimosa Retreat',
