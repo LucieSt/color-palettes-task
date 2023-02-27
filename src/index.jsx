@@ -1,6 +1,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { palettes } from './palettes.js';
 import './style.css';
+
+const barvy = [];
+palettes[0].colors.forEach((barva) => {
+  barvy.push(barva);
+});
 
 const App = () => {
   return (
@@ -13,11 +19,9 @@ const App = () => {
           <div className="palette-scheme palette-scheme--vertical">
             <img className="scheme-image" src="/img/mimosa-retreat.jpg" alt="Mimosa Retreat" />
             <div className="scheme-colors">
-              <div className="scheme-color" style={{ backgroundColor: '#583e26' }} >#583e26</div>
-              <div className="scheme-color" style={{ backgroundColor: '#a78b71' }} >#a78b71</div>
-              <div className="scheme-color" style={{ backgroundColor: '#f7c815' }} >#f7c815</div>
-              <div className="scheme-color" style={{ backgroundColor: '#ec9704' }} >#ec9704</div>
-              <div className="scheme-color" style={{ backgroundColor: '#9c4a1a' }} >#9c4a1a</div>
+              {barvy.map((barva) => (
+                <div className="scheme-color" style={{ backgroundColor: barva }} >{barva}</div>
+              ))}
             </div>
           </div>
           <div className="palette-info">
