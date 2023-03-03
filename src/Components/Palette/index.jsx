@@ -11,7 +11,7 @@ const Palette = ({ paletteData }) => {
 			<div className={directionClass}>
 				<img className="scheme-image" src={paletteData.image} alt={paletteData.name} />
 				<div className="scheme-colors">
-					{paletteData.colors.map((barva) => <SchemeColor color={barva}/> )}
+					{paletteData.colors.map((barva) => <SchemeColor key={barva} color={barva}/> )}
 				</div>
 			</div>
 			<div className="palette-info">
